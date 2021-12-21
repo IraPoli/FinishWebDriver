@@ -24,7 +24,7 @@ import java.util.List;
         private static final Logger logger = LogManager.getLogger(Parallel.class);//Logger.getLogger(PropertiesReader.
 
 
-        @DataProvider(name = "data")//, parallel = true)
+        @DataProvider(name = "data", parallel = true)
         public static Object[] getData() {
             XMLToObject xmlToObject = new XMLToObject();
             FiltersRozetka filtersRozetka = xmlToObject.convert();
@@ -37,7 +37,6 @@ import java.util.List;
         public void parallel(FilterRozetka filterRozetka) throws Exception {
            int testId = filterRozetka.getId();
             String brand = filterRozetka.getBrand();
-
 
             homePage = new HomePage();
             homePage.enterTextToSearchField(filterRozetka.getItemName(),testId);
@@ -55,38 +54,34 @@ import java.util.List;
          //   searchResultPage.selectBrand(brand);
             logger.info("Test-" + testId + " Select brand " + brand);
 
-            searchResultPage.refresh();
+         //   searchResultPage.refresh();
 
             searchResultPage.waitForPageLoadComplete(DEFAULT_WAITING_TIME);
-           // searchResultPage.scrollTo(null);
-
-
-
-            searchResultPage.refresh();
+            searchResultPage.scrollTo(null);
             searchResultPage. clickBuyButtonFirst(0);
             logger.info("Test-" + testId + " Select first product to Curt");
 
+           // searchResultPage.scrollToCartButton(null);
+            searchResultPage. scrollToBottom(null);
 
-            //searchResultPage.waitForPageLoadComplete(DEFAULT_WAITING_TIME);
-            searchResultPage.scrollToCartButton(null);
-            searchResultPage.refresh();
             searchResultPage.clickOpenCartButton(0);
             logger.info("Test-" + testId + " Open Curt page");
             searchResultPage.waitForPageLoadComplete(DEFAULT_WAITING_TIME);
+
             curtPage = new CurtPage();
 
+            curtPage.waitForPageLoadComplete(DEFAULT_WAITING_TIME);
+            curtPage.waitVisibilityOfElement(DEFAULT_WAITING_TIME,curtPage.getSumWebElement());
             int sumPrice = curtPage.getSumPrice(0);
 
 
             curtPage.takeSnapShot("./screenshots/testParallel_" + testId + ".png");
             Assert.assertTrue(sumPrice > filterRozetka.getSumLimit());
             logger.info("Test-" + testId + "Assert price " + sumPrice + " > " + filterRozetka.getSumLimit());
-            curtPage.close();
-
         }
 
 
-        @AfterMethod(alwaysRun = true)
+     @AfterMethod
         public void close() {
           WebDriverSingleton.close();
         }

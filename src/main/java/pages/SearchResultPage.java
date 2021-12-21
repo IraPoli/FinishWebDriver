@@ -71,6 +71,10 @@ public class SearchResultPage extends BasePage {
     private WebElement topOfPage;
 
 
+    @FindBy(xpath = " /html/body/app-root/div/div/rz-search/rz-catalog/div/div[2]/section/rz-catalog-paginator/rz-load-more/a/span")
+    private WebElement bottomOfPage;
+
+
     JavascriptExecutor je = (JavascriptExecutor) driver;
 
     public SearchResultPage() {
@@ -86,12 +90,13 @@ public class SearchResultPage extends BasePage {
     }
 
     public void addFirstProduct() {
-        refresh();
+
         WebElement el = buyButtonList.get(1);
         el.click();
     }
 
     public void clickOpenCartButton(int testId) {
+
         logger.info("Test-" + testId + " Open Curt page");
         openCurtButton.click();
     }
@@ -153,8 +158,8 @@ public class SearchResultPage extends BasePage {
                 .ignoring(NoSuchElementException.class);
         //waitfluent.until(ExpectedConditions.visibilityOfAllElements((List<WebElement>) buyButtonList));
 
-       // waitfluent.until(ExpectedConditions.visibilityOf(buyButtonFirst));
-        waitfluent.until(ExpectedConditions.elementToBeClickable(buyButtonFirst));
+        waitfluent.until(ExpectedConditions.visibilityOf(buyButtonFirst));
+       // waitfluent.until(ExpectedConditions.elementToBeClickable(buyButtonFirst));
 
         //Thread.sleep(2000);
 
@@ -204,19 +209,14 @@ public class SearchResultPage extends BasePage {
         je.executeScript("arguments[0].scrollIntoView(true);",element);
     }
 
+    public void scrollToBottom(WebElement element){
+        element = bottomOfPage;
+        je.executeScript("arguments[0].scrollIntoView(true);",element);
+    }
+
+
     public void scrollTo(WebElement element) throws InterruptedException {
-        refresh();
-       /* Wait waitFluent =  new FluentWait(driver)
-                .withTimeout(30, TimeUnit.SECONDS)
-                .pollingEvery(2, TimeUnit.SECONDS)
-                .ignoring(NoSuchElementException.class);
-        waitFluent.until(ExpectedConditions.visibilityOf(topOfPage));
 
-*/
-      //  Thread.sleep(1000);
-
-
-       // element = buyButtonFirst;
         element = topOfPage;
         je.executeScript("arguments[0].scrollIntoView(true);",element);
     }
@@ -226,5 +226,4 @@ public class SearchResultPage extends BasePage {
         je.executeScript("arguments[0].scrollIntoView(true);",element);
     }
 
-    //label[@for = 'SRR']
 }

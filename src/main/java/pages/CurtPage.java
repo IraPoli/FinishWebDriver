@@ -13,8 +13,16 @@ public class CurtPage extends BasePage {
     }
 
     public int getSumPrice( int testId) {
+
         String price = sumPrice.getText();
         logger.info("Test-" + testId + " get sum price" +  price);
         return Integer.parseInt(price);
     }
+
+    public WebElement getSumWebElement() {
+    return sumPrice;
+
+    }
+
+
 }

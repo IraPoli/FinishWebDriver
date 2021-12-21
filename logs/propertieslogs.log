@@ -1460,3 +1460,253 @@
 [INFO ] 2021-12-21 17:42:00.038 [main] BasePage - Test-0 Select first product to Curt
 [INFO ] 2021-12-21 17:42:00.328 [main] BasePage - Test-0 Open Curt page
 [INFO ] 2021-12-21 17:42:03.203 [main] BasePage - Test-0 get sum price29999
+[INFO ] 2021-12-21 17:53:31.816 [main] BasePage - Test-1 Enter search phone
+[INFO ] 2021-12-21 17:53:39.261 [main] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 17:53:39.547 [main] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 17:53:44.874 [main] BasePage - Test-0 get sum price29999
+[INFO ] 2021-12-21 18:07:58.375 [main] BasePage - Test-1 Enter search phone
+[INFO ] 2021-12-21 18:08:05.390 [main] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:08:05.974 [main] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:08:08.917 [main] BasePage - Test-0 get sum price29999
+[INFO ] 2021-12-21 18:08:39.400 [main] BasePage - Test-1 Enter search phone
+[INFO ] 2021-12-21 18:08:46.228 [main] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:08:46.968 [main] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:08:49.908 [main] BasePage - Test-0 get sum price29999
+[INFO ] 2021-12-21 18:08:57.484 [main] BasePage - Test-2 Enter search bag
+[INFO ] 2021-12-21 18:09:06.493 [main] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:09:07.071 [main] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:09:10.181 [main] BasePage - Test-0 get sum price3400
+[INFO ] 2021-12-21 18:09:16.567 [main] BasePage - Test-3 Enter search lamp
+[INFO ] 2021-12-21 18:10:59.953 [main] BasePage - Test-1 Enter search phone
+[INFO ] 2021-12-21 18:11:07.498 [main] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:11:07.786 [main] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:11:10.794 [main] BasePage - Test-0 get sum price29999
+[INFO ] 2021-12-21 18:11:47.061 [TestNG-PoolService-0] BasePage - Test-1 Enter search phone
+[INFO ] 2021-12-21 18:11:48.375 [TestNG-PoolService-1] BasePage - Test-2 Enter search bag
+[INFO ] 2021-12-21 18:11:48.897 [TestNG-PoolService-2] BasePage - Test-3 Enter search lamp
+[INFO ] 2021-12-21 18:12:01.159 [TestNG-PoolService-1] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:12:04.079 [TestNG-PoolService-2] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:12:10.073 [TestNG-PoolService-0] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:12:11.443 [TestNG-PoolService-1] BasePage - Test-4 Enter search лижі
+[INFO ] 2021-12-21 18:13:28.904 [TestNG-PoolService-0] BasePage - Test-5 Enter search sup
+[INFO ] 2021-12-21 18:13:31.597 [TestNG-PoolService-1] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:13:36.097 [TestNG-PoolService-1] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:13:43.480 [TestNG-PoolService-1] BasePage - Test-0 get sum price4160
+[INFO ] 2021-12-21 18:13:48.565 [TestNG-PoolService-0] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:13:48.814 [TestNG-PoolService-0] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:13:52.762 [TestNG-PoolService-0] BasePage - Test-0 get sum price350
+[INFO ] 2021-12-21 18:15:58.469 [main] BasePage - Test-1 Enter search phone
+[INFO ] 2021-12-21 18:16:06.650 [main] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:16:07.076 [main] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:26:06.462 [main] BasePage - Test-1 Enter search phone
+[INFO ] 2021-12-21 18:26:15.031 [main] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:26:15.577 [main] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:26:18.407 [main] BasePage - Test-0 get sum price29999
+[INFO ] 2021-12-21 18:26:20.289 [main] BasePage - Test-2 Enter search bag
+[INFO ] 2021-12-21 18:26:29.558 [main] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:26:29.802 [main] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:26:33.223 [main] BasePage - Test-0 get sum price33399
+[INFO ] 2021-12-21 18:26:36.360 [main] BasePage - Test-3 Enter search lamp
+[INFO ] 2021-12-21 18:26:41.485 [main] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:26:44.234 [main] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:26:48.341 [main] BasePage - Test-0 get sum price34149
+[INFO ] 2021-12-21 18:26:50.863 [main] BasePage - Test-4 Enter search лижі
+[INFO ] 2021-12-21 18:26:56.924 [main] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:26:59.233 [main] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:27:01.822 [main] BasePage - Test-0 get sum price38309
+[INFO ] 2021-12-21 18:27:03.930 [main] BasePage - Test-5 Enter search sup
+[INFO ] 2021-12-21 18:27:23.887 [main] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:27:27.715 [main] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:27:28.961 [main] BasePage - Test-0 get sum price38659
+[INFO ] 2021-12-21 18:28:03.638 [TestNG-PoolService-1] BasePage - Test-2 Enter search bag
+[INFO ] 2021-12-21 18:28:04.015 [TestNG-PoolService-2] BasePage - Test-3 Enter search lamp
+[INFO ] 2021-12-21 18:28:05.106 [TestNG-PoolService-0] BasePage - Test-1 Enter search phone
+[INFO ] 2021-12-21 18:28:07.205 [TestNG-PoolService-3] BasePage - Test-4 Enter search лижі
+[INFO ] 2021-12-21 18:28:07.713 [TestNG-PoolService-4] BasePage - Test-5 Enter search sup
+[INFO ] 2021-12-21 18:28:33.903 [TestNG-PoolService-2] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:28:41.751 [TestNG-PoolService-4] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:28:45.203 [TestNG-PoolService-0] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:28:48.929 [TestNG-PoolService-3] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:28:48.939 [TestNG-PoolService-1] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:28:53.781 [TestNG-PoolService-4] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:29:03.693 [TestNG-PoolService-0] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:29:03.703 [TestNG-PoolService-3] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:29:04.577 [TestNG-PoolService-1] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:29:12.411 [TestNG-PoolService-4] BasePage - Test-0 get sum price350
+[INFO ] 2021-12-21 18:34:12.211 [TestNG-PoolService-1] BasePage - Test-2 Enter search bag
+[INFO ] 2021-12-21 18:34:13.574 [TestNG-PoolService-2] BasePage - Test-3 Enter search lamp
+[INFO ] 2021-12-21 18:34:14.993 [TestNG-PoolService-4] BasePage - Test-5 Enter search sup
+[INFO ] 2021-12-21 18:34:15.221 [TestNG-PoolService-3] BasePage - Test-4 Enter search лижі
+[INFO ] 2021-12-21 18:34:15.649 [TestNG-PoolService-0] BasePage - Test-1 Enter search phone
+[INFO ] 2021-12-21 18:34:38.971 [TestNG-PoolService-0] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:34:39.338 [TestNG-PoolService-2] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:34:39.605 [TestNG-PoolService-3] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:34:41.452 [TestNG-PoolService-1] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:34:45.209 [TestNG-PoolService-4] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:34:50.436 [TestNG-PoolService-0] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:34:53.381 [TestNG-PoolService-2] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:34:55.858 [TestNG-PoolService-3] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:36:25.183 [main] BasePage - Test-1 Enter search phone
+[INFO ] 2021-12-21 18:36:37.463 [main] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:36:38.239 [main] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:36:41.097 [main] BasePage - Test-0 get sum price29999
+[INFO ] 2021-12-21 18:36:43.255 [main] BasePage - Test-2 Enter search bag
+[INFO ] 2021-12-21 18:36:55.138 [main] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:36:55.394 [main] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:36:59.507 [main] BasePage - Test-0 get sum price33399
+[INFO ] 2021-12-21 18:37:02.916 [main] BasePage - Test-3 Enter search lamp
+[INFO ] 2021-12-21 18:37:11.209 [main] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:37:11.451 [main] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:37:14.265 [main] BasePage - Test-0 get sum price34149
+[INFO ] 2021-12-21 18:37:16.363 [main] BasePage - Test-4 Enter search лижі
+[INFO ] 2021-12-21 18:37:26.081 [main] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:37:26.431 [main] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:37:29.525 [main] BasePage - Test-0 get sum price38309
+[INFO ] 2021-12-21 18:37:32.443 [main] BasePage - Test-5 Enter search sup
+[INFO ] 2021-12-21 18:38:20.003 [TestNG-PoolService-3] BasePage - Test-4 Enter search лижі
+[INFO ] 2021-12-21 18:38:20.515 [TestNG-PoolService-2] BasePage - Test-3 Enter search lamp
+[INFO ] 2021-12-21 18:38:20.837 [TestNG-PoolService-4] BasePage - Test-5 Enter search sup
+[INFO ] 2021-12-21 18:38:21.088 [TestNG-PoolService-0] BasePage - Test-1 Enter search phone
+[INFO ] 2021-12-21 18:38:26.411 [TestNG-PoolService-1] BasePage - Test-2 Enter search bag
+[INFO ] 2021-12-21 18:38:45.702 [TestNG-PoolService-0] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:38:48.716 [TestNG-PoolService-2] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:38:48.719 [TestNG-PoolService-4] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:38:48.890 [TestNG-PoolService-1] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:38:48.974 [TestNG-PoolService-3] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:38:58.078 [TestNG-PoolService-0] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:38:58.121 [TestNG-PoolService-2] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:39:00.950 [TestNG-PoolService-4] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:39:04.257 [TestNG-PoolService-1] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:39:58.440 [main] BasePage - Test-1 Enter search phone
+[INFO ] 2021-12-21 18:40:05.909 [main] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:40:06.405 [main] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:40:09.415 [main] BasePage - Test-0 get sum price29999
+[INFO ] 2021-12-21 18:40:15.612 [main] BasePage - Test-2 Enter search bag
+[INFO ] 2021-12-21 18:40:24.734 [main] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:40:25.350 [main] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:47:08.018 [main] BasePage - Test-1 Enter search phone
+[INFO ] 2021-12-21 18:47:13.111 [main] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:47:15.546 [main] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:47:18.566 [main] BasePage - Test-0 get sum price29999
+[INFO ] 2021-12-21 18:47:24.349 [main] BasePage - Test-2 Enter search bag
+[INFO ] 2021-12-21 18:47:52.866 [TestNG-PoolService-1] BasePage - Test-2 Enter search bag
+[INFO ] 2021-12-21 18:47:53.548 [TestNG-PoolService-2] BasePage - Test-3 Enter search lamp
+[INFO ] 2021-12-21 18:47:53.650 [TestNG-PoolService-0] BasePage - Test-1 Enter search phone
+[INFO ] 2021-12-21 18:48:06.512 [TestNG-PoolService-0] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:48:06.586 [TestNG-PoolService-2] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:48:11.263 [TestNG-PoolService-1] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:48:11.896 [TestNG-PoolService-0] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:48:16.823 [TestNG-PoolService-2] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:48:19.960 [TestNG-PoolService-1] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:49:38.999 [TestNG-PoolService-3] BasePage - Test-4 Enter search лижі
+[INFO ] 2021-12-21 18:49:39.031 [TestNG-PoolService-4] BasePage - Test-5 Enter search sup
+[INFO ] 2021-12-21 18:49:39.351 [TestNG-PoolService-0] BasePage - Test-1 Enter search phone
+[INFO ] 2021-12-21 18:49:41.227 [TestNG-PoolService-1] BasePage - Test-2 Enter search bag
+[INFO ] 2021-12-21 18:49:42.425 [TestNG-PoolService-2] BasePage - Test-3 Enter search lamp
+[INFO ] 2021-12-21 18:50:04.438 [TestNG-PoolService-2] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:50:06.637 [TestNG-PoolService-1] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:50:06.668 [TestNG-PoolService-0] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:50:11.131 [TestNG-PoolService-3] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:50:11.268 [TestNG-PoolService-4] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:58:12.718 [main] BasePage - Test-1 Enter search phone
+[INFO ] 2021-12-21 18:58:15.552 [main] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:58:15.853 [main] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:58:16.585 [main] BasePage - Test-0 get sum price29999
+[INFO ] 2021-12-21 18:58:22.554 [main] BasePage - Test-2 Enter search bag
+[INFO ] 2021-12-21 18:58:26.128 [main] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:58:26.408 [main] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:58:26.851 [main] BasePage - Test-0 get sum price3400
+[INFO ] 2021-12-21 18:58:52.848 [TestNG-PoolService-0] BasePage - Test-1 Enter search phone
+[INFO ] 2021-12-21 18:58:53.685 [TestNG-PoolService-2] BasePage - Test-3 Enter search lamp
+[INFO ] 2021-12-21 18:58:55.191 [TestNG-PoolService-1] BasePage - Test-2 Enter search bag
+[INFO ] 2021-12-21 18:59:00.211 [TestNG-PoolService-2] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:59:00.720 [TestNG-PoolService-2] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:59:01.527 [TestNG-PoolService-1] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:59:01.575 [TestNG-PoolService-0] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:59:01.651 [TestNG-PoolService-2] BasePage - Test-0 get sum price750
+[INFO ] 2021-12-21 18:59:02.204 [TestNG-PoolService-1] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:59:02.237 [TestNG-PoolService-0] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:59:09.805 [TestNG-PoolService-2] BasePage - Test-4 Enter search лижі
+[INFO ] 2021-12-21 18:59:10.240 [TestNG-PoolService-0] BasePage - Test-5 Enter search sup
+[INFO ] 2021-12-21 18:59:15.591 [TestNG-PoolService-0] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:59:15.599 [TestNG-PoolService-2] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 18:59:15.924 [TestNG-PoolService-0] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 18:59:15.928 [TestNG-PoolService-2] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 19:09:22.776 [main] BasePage - Test-1 Enter search phone
+[INFO ] 2021-12-21 19:09:25.740 [main] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 19:09:26.024 [main] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 19:09:26.825 [main] BasePage - Test-0 get sum price29999
+[INFO ] 2021-12-21 19:09:32.574 [main] BasePage - Test-2 Enter search bag
+[INFO ] 2021-12-21 19:09:36.126 [main] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 19:09:36.408 [main] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 19:09:36.954 [main] BasePage - Test-0 get sum price3400
+[INFO ] 2021-12-21 19:10:05.752 [TestNG-PoolService-0] BasePage - Test-1 Enter search phone
+[INFO ] 2021-12-21 19:10:05.857 [TestNG-PoolService-1] BasePage - Test-2 Enter search bag
+[INFO ] 2021-12-21 19:10:06.083 [TestNG-PoolService-3] BasePage - Test-4 Enter search лижі
+[INFO ] 2021-12-21 19:10:07.341 [TestNG-PoolService-2] BasePage - Test-3 Enter search lamp
+[INFO ] 2021-12-21 19:10:08.739 [TestNG-PoolService-4] BasePage - Test-5 Enter search sup
+[INFO ] 2021-12-21 19:10:18.606 [TestNG-PoolService-3] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 19:10:18.731 [TestNG-PoolService-0] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 19:10:19.934 [TestNG-PoolService-3] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 19:10:19.952 [TestNG-PoolService-0] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 19:10:19.969 [TestNG-PoolService-2] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 19:10:22.326 [TestNG-PoolService-4] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 19:10:22.331 [TestNG-PoolService-1] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 19:10:23.031 [TestNG-PoolService-4] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 19:10:23.047 [TestNG-PoolService-1] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 19:13:38.859 [TestNG-PoolService-2] BasePage - Test-3 Enter search lamp
+[INFO ] 2021-12-21 19:13:39.313 [TestNG-PoolService-3] BasePage - Test-4 Enter search лижі
+[INFO ] 2021-12-21 19:13:39.526 [TestNG-PoolService-1] BasePage - Test-2 Enter search bag
+[INFO ] 2021-12-21 19:13:39.982 [TestNG-PoolService-0] BasePage - Test-1 Enter search phone
+[INFO ] 2021-12-21 19:13:40.238 [TestNG-PoolService-4] BasePage - Test-5 Enter search sup
+[INFO ] 2021-12-21 19:13:53.036 [TestNG-PoolService-2] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 19:13:53.734 [TestNG-PoolService-2] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 19:13:54.774 [TestNG-PoolService-2] BasePage - Test-0 get sum price750
+[INFO ] 2021-12-21 19:13:56.550 [TestNG-PoolService-1] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 19:13:56.648 [TestNG-PoolService-3] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 19:13:56.834 [TestNG-PoolService-0] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 19:13:56.986 [TestNG-PoolService-4] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 19:13:58.175 [TestNG-PoolService-1] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 19:13:58.187 [TestNG-PoolService-0] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 19:13:58.265 [TestNG-PoolService-3] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 19:13:58.270 [TestNG-PoolService-4] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 19:16:24.079 [main] BasePage - Test-1 Enter search phone
+[INFO ] 2021-12-21 19:16:27.137 [main] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 19:16:27.417 [main] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 19:16:28.174 [main] BasePage - Test-0 get sum price29999
+[INFO ] 2021-12-21 19:16:33.831 [main] BasePage - Test-2 Enter search bag
+[INFO ] 2021-12-21 19:16:37.073 [main] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 19:16:37.301 [main] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 19:16:37.812 [main] BasePage - Test-0 get sum price3400
+[INFO ] 2021-12-21 19:17:03.930 [TestNG-PoolService-1] BasePage - Test-2 Enter search bag
+[INFO ] 2021-12-21 19:17:04.657 [TestNG-PoolService-0] BasePage - Test-1 Enter search phone
+[INFO ] 2021-12-21 19:17:04.870 [TestNG-PoolService-2] BasePage - Test-3 Enter search lamp
+[INFO ] 2021-12-21 19:17:10.553 [TestNG-PoolService-0] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 19:17:10.585 [TestNG-PoolService-2] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 19:17:11.130 [TestNG-PoolService-0] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 19:17:11.137 [TestNG-PoolService-2] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 19:17:12.769 [TestNG-PoolService-1] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 19:17:19.064 [TestNG-PoolService-2] BasePage - Test-4 Enter search лижі
+[INFO ] 2021-12-21 19:17:19.336 [TestNG-PoolService-1] BasePage - Test-5 Enter search sup
+[INFO ] 2021-12-21 19:17:24.720 [TestNG-PoolService-1] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 19:17:24.728 [TestNG-PoolService-2] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 19:17:25.116 [TestNG-PoolService-1] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 19:17:25.119 [TestNG-PoolService-2] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 19:18:23.535 [TestNG-PoolService-3] BasePage - Test-4 Enter search лижі
+[INFO ] 2021-12-21 19:18:24.262 [TestNG-PoolService-2] BasePage - Test-3 Enter search lamp
+[INFO ] 2021-12-21 19:18:24.402 [TestNG-PoolService-1] BasePage - Test-2 Enter search bag
+[INFO ] 2021-12-21 19:18:26.872 [TestNG-PoolService-0] BasePage - Test-1 Enter search phone
+[INFO ] 2021-12-21 19:18:27.281 [TestNG-PoolService-4] BasePage - Test-5 Enter search sup
+[INFO ] 2021-12-21 19:18:38.122 [TestNG-PoolService-2] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 19:18:38.805 [TestNG-PoolService-2] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 19:18:39.625 [TestNG-PoolService-1] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 19:18:39.640 [TestNG-PoolService-3] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 19:18:40.032 [TestNG-PoolService-2] BasePage - Test-0 get sum price750
+[INFO ] 2021-12-21 19:18:40.957 [TestNG-PoolService-1] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 19:18:40.970 [TestNG-PoolService-3] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 19:18:42.240 [TestNG-PoolService-4] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 19:18:42.281 [TestNG-PoolService-0] BasePage - Test-0 Select first product to Curt
+[INFO ] 2021-12-21 19:18:42.885 [TestNG-PoolService-1] BasePage - Test-0 get sum price3400
+[INFO ] 2021-12-21 19:18:43.121 [TestNG-PoolService-4] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 19:18:43.198 [TestNG-PoolService-0] BasePage - Test-0 Open Curt page
+[INFO ] 2021-12-21 19:18:44.821 [TestNG-PoolService-4] BasePage - Test-0 get sum price350

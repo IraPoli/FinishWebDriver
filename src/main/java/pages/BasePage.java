@@ -24,7 +24,6 @@ public class BasePage {
 
     public BasePage() {
         driver = WebDriverSingleton.getInstance();
-       // driver.get(propertiesReader.getUrl());
         PageFactory.initElements(driver, this);
         logger = LogManager.getLogger(BasePage.class);
 
@@ -32,23 +31,22 @@ public class BasePage {
     }
 
     public void waitForPageLoadComplete(long timeToWait) {
-       // Wait waitFluent = new FluentWait(WebDriverSingleton.currentDriver())
-        Wait waitFluent = new FluentWait(driver)
+     /*   Wait waitFluent = new FluentWait(driver)
                 .withTimeout(60, TimeUnit.SECONDS)
                 .pollingEvery(1, TimeUnit.SECONDS)
                 .ignoring(NoSuchElementException.class);
         waitFluent.until(webDriver -> ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete"));
 
-/*
 
+*/
         new WebDriverWait(driver, timeToWait).until(
                 webDriver -> ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete"));
 
-   */
+
     }
 
     public void waitForAjaxToComplete(long timeToWait) {
-        new FluentWait(WebDriverSingleton.currentDriver())
+        new FluentWait(driver)
                 .ignoring(NoSuchElementException.class)
                .until(
                 webDriver -> ((JavascriptExecutor) webDriver).executeScript("return window.jQuery != undefined && jQuery.active == 0;"));
@@ -67,18 +65,18 @@ public class BasePage {
     }
 
     public void waitElementToBeClickable(long timeToWait, WebElement element) {
-        new FluentWait(WebDriverSingleton.currentDriver())
+      /*  new FluentWait(driver)
                 .ignoring(NoSuchElementException.class)
-                .until(ExpectedConditions.elementToBeClickable(element));
+                .until(ExpectedConditions.elementToBeClickable(element));*/
         //WebDriverWait wait = new WebDriverWait(driver, timeToWait);
         //wait.until(ExpectedConditions.elementToBeClickable(element));
 
     }
 
 
-    public void refresh() {
+   /* public void refresh() {
         driver.navigate().refresh();
-    }
+    }*/
 
     public void takeSnapShot(String fileWithPath) throws Exception {
         TakesScreenshot scrShot = ((TakesScreenshot) driver);
@@ -86,11 +84,6 @@ public class BasePage {
         File destFile = new File(fileWithPath);
         FileUtils.copyFile(srcFile, destFile);
     }
-    public void close() {
-       driver.quit();
-    }
-
-
 
 
 

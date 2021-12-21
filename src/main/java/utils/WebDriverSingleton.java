@@ -10,7 +10,6 @@ public class WebDriverSingleton {
     private static final ThreadLocal<WebDriver> webDriverThreadLocal = new ThreadLocal<>();
 
     private WebDriverSingleton() {
-
     }
 
     public static WebDriver getInstance() {
@@ -23,18 +22,13 @@ public class WebDriverSingleton {
             instance = new ChromeDriver();
             instance.manage().window().maximize();
             instance.manage().timeouts().implicitlyWait(70, TimeUnit.SECONDS);
-           // instance.get(propertiesReader.getUrl());
             webDriverThreadLocal.set(instance);
         }
         return webDriverThreadLocal.get();
     }
-/////////////
-    public static WebDriver currentDriver(){
-        return webDriverThreadLocal.get();
-    }
-  /////////////
+
     public static void close() {
-       // webDriverThreadLocal.get().close();
+
         try {
             webDriverThreadLocal.get().quit();
         } catch (Exception e) {
