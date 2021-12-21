@@ -76,6 +76,10 @@ public class SearchResultPage extends BasePage {
     private WebElement bottomOfPage;
 
 
+
+    @FindBy(xpath = "/html/body/app-root/div/div/rz-search/rz-catalog/div/div[2]/aside/rz-filter-stack/div[4]")
+    private WebElement priceElement;
+
     JavascriptExecutor je = (JavascriptExecutor) driver;
 
     public SearchResultPage() {
@@ -211,6 +215,7 @@ public class SearchResultPage extends BasePage {
     }
 
     public void scrollToBottom(WebElement element){
+
         element = bottomOfPage;
         je.executeScript("arguments[0].scrollIntoView(true);",element);
     }

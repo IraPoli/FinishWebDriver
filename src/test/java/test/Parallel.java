@@ -54,14 +54,14 @@ import java.util.List;
          //   searchResultPage.selectBrand(brand);
             logger.info("Test-" + testId + " Select brand " + brand);
 
-         //   searchResultPage.refresh();
+
 
             searchResultPage.waitForPageLoadComplete(DEFAULT_WAITING_TIME);
             searchResultPage.scrollTo(null);
+
             searchResultPage. clickBuyButtonFirst(0);
             logger.info("Test-" + testId + " Select first product to Curt");
 
-          //  searchResultPage.scrollToCartButton(null);
             searchResultPage. scrollToBottom(null);
 
             searchResultPage.clickOpenCartButton(0);
