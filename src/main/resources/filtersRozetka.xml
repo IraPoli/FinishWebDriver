@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone = "yes" ?>
+<filters>
+
+    <filter>
+        <id>01</id>
+        <itemName>phone</itemName>
+        <brand>Apple</brand>
+        <sumLimit>100</sumLimit>
+    </filter>
+
+    <filter>
+        <id>02</id>
+        <itemName>bag</itemName>
+        <brand>O bag</brand>
+        <sumLimit>900</sumLimit>
+    </filter>
+
+    <filter>
+        <id>03</id>
+        <itemName>lamp</itemName>
+        <brand>SUN</brand>
+        <sumLimit>300</sumLimit>
+    </filter>
+
+    <filter>
+        <id>04</id>
+        <itemName>лижі</itemName>
+        <brand>Volkl</brand>
+        <sumLimit>1500</sumLimit>
+    </filter>
+
+    <filter>
+        <id>05</id>
+        <itemName>sup</itemName>
+        <brand>Red</brand>
+        <sumLimit>700</sumLimit>
+    </filter>
+
+</filters>

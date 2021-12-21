@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone = "yes" ?>
+<filter>
+
+        <id>01</id>
+        <itemName>toys</itemName>
+        <brand>LEGO</brand>
+        <sumLimit>300</sumLimit>
+
+</filter>
