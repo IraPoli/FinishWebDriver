@@ -61,7 +61,7 @@ import java.util.List;
             searchResultPage. clickBuyButtonFirst(0);
             logger.info("Test-" + testId + " Select first product to Curt");
 
-           // searchResultPage.scrollToCartButton(null);
+          //  searchResultPage.scrollToCartButton(null);
             searchResultPage. scrollToBottom(null);
 
             searchResultPage.clickOpenCartButton(0);

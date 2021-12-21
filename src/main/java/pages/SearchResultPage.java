@@ -71,7 +71,8 @@ public class SearchResultPage extends BasePage {
     private WebElement topOfPage;
 
 
-    @FindBy(xpath = " /html/body/app-root/div/div/rz-search/rz-catalog/div/div[2]/section/rz-catalog-paginator/rz-load-more/a/span")
+   // @FindBy(xpath = " /html/body/app-root/div/div/rz-search/rz-catalog/div/div[2]/section/rz-catalog-paginator/rz-load-more/a/span")
+    @FindBy(xpath = "/html/body/app-root/div/rz-lazy")
     private WebElement bottomOfPage;
 
 
