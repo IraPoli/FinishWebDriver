@@ -100,38 +100,15 @@ public class SearchResultPage extends BasePage {
         el.click();
     }
 
-    public void clickOpenCartButton(int testId) {
+    public void clickOpenCartButton() {
 
-        logger.info("Test-" + testId + " Open Curt page");
+        logger.info(" Open Curt page");
         openCurtButton.click();
     }
 
 
 
     public void selectBrand(String brandName) throws InterruptedException {
-
-      //  WebElement webElementBrand = producerList.stream().filter(e -> e.getText().contains(brandName)).findAny().orElse(null);
-      //  if (webElementBrand == null) throw new AssertionError();
-      //  webElementBrand.click();
-
-    //    Thread.sleep(2000);
-
-//Filtering WebElements Using Regular Expression
-
-
-
-        //Wait waitFluent = new FluentWait(WebDriverSingleton.currentDriver())
-
-       /*
-        Wait waitFluent = new FluentWait(driver)
-                .withTimeout(120, TimeUnit.SECONDS)
-                .pollingEvery(2, TimeUnit.SECONDS)
-                .ignoring(NoSuchElementException.class);
-         waitFluent.until(ExpectedConditions.visibilityOfAllElements((List<WebElement>) producerList));
-       // waitFluent.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@data-filter-name='producer']//label[@for='"+brandName+"']")));
-       // waitFluent.until(ExpectedConditions.numberOfElementsToBeMoreThan(By.xpath("//div[@data-filter-name='producer']//label)"),10));
-*/
-        sleep(400);
 
         WebElement webElementBrand = producerList.stream().filter(e -> e.getText().contains(brandName)).findAny().orElse(null);
         webElementBrand.click();
@@ -152,41 +129,18 @@ public class SearchResultPage extends BasePage {
         itemList.get(0).click();
     }
 
-    public void clickBuyButtonFirst(int testId) throws InterruptedException {
+    public void clickBuyButtonFirst() throws InterruptedException {
 
 
-        logger.info("Test-" + testId + " Select first product to Curt");
-      //  Wait waitfluent = new FluentWait(WebDriverSingleton.currentDriver())
+        logger.info(" Select first product to Curt");
         Wait waitfluent = new FluentWait(driver)
                 .withTimeout(30, TimeUnit.SECONDS)
                 .pollingEvery(2, TimeUnit.SECONDS)
                 .ignoring(NoSuchElementException.class);
-        //waitfluent.until(ExpectedConditions.visibilityOfAllElements((List<WebElement>) buyButtonList));
 
         waitfluent.until(ExpectedConditions.visibilityOf(buyButtonFirst));
-       // waitfluent.until(ExpectedConditions.elementToBeClickable(buyButtonFirst));
-
-        //Thread.sleep(2000);
-
-      //  waitfluent.until(ExpectedConditions.elementToBeClickable(buyButtonFirst));
-
         buyButtonFirst.click();
 
-
-      //  buyButtonList.get(0).click();
-
-
-       /* try {
-
-            List<WebElement> list = getBuyButtonElement();
-            list.get(0).click();
-        }
-        catch(org.openqa.selenium.StaleElementReferenceException ex)
-        {
-            List <WebElement> list = getBuyButtonElement();
-            list.get(0).click();
-        }
-*/
     }
 
     public WebElement getBrandSideBar() {

@@ -27,8 +27,8 @@ public class HomePage extends BasePage {
         driver.get(propertiesReader.getUrl());
     }
 
-    public void enterTextToSearchField(final String searchText, int testId) {
-        logger.info("Test-" + testId + " Enter search " + searchText);
+    public void enterTextToSearchField(final String searchText) {
+        logger.info( " Enter search " + searchText);
         searchField.clear();
         searchField.sendKeys(searchText, Keys.ENTER);
 

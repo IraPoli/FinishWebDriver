@@ -21,10 +21,8 @@ import java.util.List;
         CurtPage curtPage;
 
         private static final long DEFAULT_WAITING_TIME = 90;
-        private static final Logger logger = LogManager.getLogger(Parallel.class);//Logger.getLogger(PropertiesReader.
 
-
-        @DataProvider(name = "data", parallel = true)
+        @DataProvider(name = "data")//, parallel = true)
         public static Object[] getData() {
             XMLToObject xmlToObject = new XMLToObject();
             FiltersRozetka filtersRozetka = xmlToObject.convert();
@@ -36,52 +34,36 @@ import java.util.List;
         @Test(dataProvider = "data")
         public void parallel(FilterRozetka filterRozetka) throws Exception {
            int testId = filterRozetka.getId();
-            String brand = filterRozetka.getBrand();
+
 
             homePage = new HomePage();
-            homePage.enterTextToSearchField(filterRozetka.getItemName(),testId);
+            homePage.enterTextToSearchField(filterRozetka.getItemName());
             homePage.waitForPageLoadComplete(DEFAULT_WAITING_TIME);
 
             searchResultPage = new SearchResultPage();
             searchResultPage.waitForPageLoadComplete(DEFAULT_WAITING_TIME);
-          //  searchResultPage.scrollToElem(null);
+           // searchResultPage.scrollToElem(null);
            // searchResultPage.waitForPageLoadComplete(DEFAULT_WAITING_TIME);
-
-
            // searchResultPage.waitForAjaxToComplete(DEFAULT_WAITING_TIME);
-
-
-         //   searchResultPage.selectBrand(brand);
-            logger.info("Test-" + testId + " Select brand " + brand);
-
-
-
+           // searchResultPage.selectBrand(brand);
             searchResultPage.waitForPageLoadComplete(DEFAULT_WAITING_TIME);
             searchResultPage.scrollTo(null);
-
-            searchResultPage. clickBuyButtonFirst(0);
-            logger.info("Test-" + testId + " Select first product to Curt");
-
+            searchResultPage. clickBuyButtonFirst();
             searchResultPage. scrollToBottom(null);
-
-            searchResultPage.clickOpenCartButton(0);
-            logger.info("Test-" + testId + " Open Curt page");
+            searchResultPage.clickOpenCartButton();
             searchResultPage.waitForPageLoadComplete(DEFAULT_WAITING_TIME);
 
             curtPage = new CurtPage();
-
             curtPage.waitForPageLoadComplete(DEFAULT_WAITING_TIME);
             curtPage.waitVisibilityOfElement(DEFAULT_WAITING_TIME,curtPage.getSumWebElement());
-            int sumPrice = curtPage.getSumPrice(0);
-
-
+            int sumPrice = curtPage.getSumPrice();
             curtPage.takeSnapShot("./screenshots/testParallel_" + testId + ".png");
             Assert.assertTrue(sumPrice > filterRozetka.getSumLimit());
-            logger.info("Test-" + testId + "Assert price " + sumPrice + " > " + filterRozetka.getSumLimit());
+
         }
 
 
-     @AfterMethod
+     @AfterMethod(alwaysRun = true)
         public void close() {
           WebDriverSingleton.close();
         }
