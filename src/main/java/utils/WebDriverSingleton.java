@@ -3,6 +3,7 @@ package utils;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.concurrent.TimeUnit;
 
@@ -20,8 +21,11 @@ public class WebDriverSingleton {
             String driverLocation = propertiesReader.getDriverLocation();
             System.setProperty(driverName, driverLocation);
             instance = new ChromeDriver();
+          //  instance = new FirefoxDriver();
+
+
             instance.manage().window().maximize();
-            instance.manage().timeouts().implicitlyWait(70, TimeUnit.SECONDS);
+            instance.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
             webDriverThreadLocal.set(instance);
         }
         return webDriverThreadLocal.get();
@@ -30,7 +34,9 @@ public class WebDriverSingleton {
     public static void close() {
 
         try {
-            webDriverThreadLocal.get().quit();
+            if(webDriverThreadLocal != null) {
+                webDriverThreadLocal.get().quit();
+            }
         } catch (Exception e) {
             System.err.println("ERROR: Can't close WebDriver");
         } finally {

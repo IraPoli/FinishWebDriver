@@ -1,26 +1,18 @@
 package pages;
 
-//import factoryDecorator.AddToCurtButton;
+import decorator.AddToCurtButton;
+import decorator.Button;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.Wait;
-import utils.WebDriverSingleton;
+
 
 import java.util.List;
-import java.util.NoSuchElementException;
-import java.util.concurrent.TimeUnit;
-
-import static java.lang.Thread.sleep;
 
 
 public class SearchResultPage extends BasePage {
 
-   // @FindBy(tagName = "//ul[contains(@ class, 'catalog-grid')]//button[contains(@class,'buy-button')]")
-   // private AddToCurtButton addToCurtButton;
 
    // @FindBy(xpath = "//div[@data-filter-name='price']")
    @FindBy(xpath = "//div[@data-filter-name='producer']")
@@ -36,11 +28,14 @@ public class SearchResultPage extends BasePage {
 
 
 
+    @FindBy(xpath = " /html/body/app-root/div/div/rz-search/rz-catalog/div/div[2]/aside/rz-filter-stack/div[3]/button/span")
+    private WebElement brandLabelHeader;
+
+
+
     @FindBy(xpath = "//a[@class='goods-tile__heading ng-star-inserted' ]")
     private List<WebElement> productList;
 
-    @FindBy(xpath = "//a[@class='goods-tile__heading ng-star-inserted' ][4]")
-    private WebElement productListEl4;
 
 
 
@@ -82,6 +77,18 @@ public class SearchResultPage extends BasePage {
 
     JavascriptExecutor je = (JavascriptExecutor) driver;
 
+    @FindBy(xpath = "//ul[contains(@ class, 'catalog-grid')]//button[contains(@class,'buy-button')][1]")
+    private AddToCurtButton  addToBasketFirstButton;
+
+    @FindBy(xpath = "//button[@opencart]")
+    private Button openCurtSafeButton;
+    ///POM!
+    By openCurtSafe = By.xpath( "//button[@opencart]");
+    By addToBasketFirstItem = By.xpath("//ul[contains(@ class, 'catalog-grid')]//button[contains(@class,'buy-button')][1]");
+////
+
+
+
     public SearchResultPage() {
     }
 
@@ -101,18 +108,35 @@ public class SearchResultPage extends BasePage {
     }
 
     public void clickOpenCartButton() {
+        ///POM!!
+        Button openCurtSafePOMButton =  new Button(driver.findElement(openCurtSafe));
+        openCurtSafePOMButton.castClick();
 
-        logger.info(" Open Curt page");
-        openCurtButton.click();
+        ////
+       // openCurtSafeButton.castClick();
+     //   je.executeScript("arguments[0].click()", openCurtButton);
+        //  logger.info(" Open Curt page");
     }
 
 
 
     public void selectBrand(String brandName) throws InterruptedException {
 
+/*
+
+        Wait waitfluent = new FluentWait(driver)
+                .withTimeout(30, TimeUnit.SECONDS)
+                .pollingEvery(2, TimeUnit.SECONDS)
+                .ignoring(NoSuchElementException.class);
+
+        waitfluent.until(ExpectedConditions.visibilityOf(brandLabelHeader));
+*/
         WebElement webElementBrand = producerList.stream().filter(e -> e.getText().contains(brandName)).findAny().orElse(null);
         webElementBrand.click();
 
+    }
+    public WebElement getBrandLabelHeader() {
+        return brandLabelHeader;
     }
 
 
@@ -131,7 +155,7 @@ public class SearchResultPage extends BasePage {
 
     public void clickBuyButtonFirst() throws InterruptedException {
 
-
+/*
         logger.info(" Select first product to Curt");
         Wait waitfluent = new FluentWait(driver)
                 .withTimeout(30, TimeUnit.SECONDS)
@@ -139,8 +163,16 @@ public class SearchResultPage extends BasePage {
                 .ignoring(NoSuchElementException.class);
 
         waitfluent.until(ExpectedConditions.visibilityOf(buyButtonFirst));
-        buyButtonFirst.click();
+      //  buyButtonFirst.click();
 
+        je.executeScript("arguments[0].click()", buyButtonFirst);
+*/
+
+        /////POM!
+     //   AddToCurtButton addToBasketFirst = new AddToCurtButton(driver.findElement(addToBasketFirstItem));
+      //  addToBasketFirst.castClick();
+
+         addToBasketFirstButton.castClick();
     }
 
     public WebElement getBrandSideBar() {

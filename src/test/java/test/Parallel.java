@@ -14,15 +14,17 @@ import utils.XMLToObject;
 
 import java.util.List;
 
+import static java.lang.Thread.sleep;
 
-    public class Parallel {
+
+public class Parallel {
         HomePage homePage;
         SearchResultPage searchResultPage;
         CurtPage curtPage;
 
         private static final long DEFAULT_WAITING_TIME = 90;
 
-        @DataProvider(name = "data")//, parallel = true)
+        @DataProvider(name = "data", parallel = true)
         public static Object[] getData() {
             XMLToObject xmlToObject = new XMLToObject();
             FiltersRozetka filtersRozetka = xmlToObject.convert();
@@ -42,16 +44,15 @@ import java.util.List;
 
             searchResultPage = new SearchResultPage();
             searchResultPage.waitForPageLoadComplete(DEFAULT_WAITING_TIME);
-           // searchResultPage.scrollToElem(null);
-           // searchResultPage.waitForPageLoadComplete(DEFAULT_WAITING_TIME);
-           // searchResultPage.waitForAjaxToComplete(DEFAULT_WAITING_TIME);
-           // searchResultPage.selectBrand(brand);
-            searchResultPage.waitForPageLoadComplete(DEFAULT_WAITING_TIME);
+
+          //  searchResultPage.scrollToElem(null);
+           // searchResultPage.waitVisibilityOfElement(DEFAULT_WAITING_TIME,searchResultPage.getBrandLabelHeader());
+          //  searchResultPage.selectBrand(filterRozetka.getBrand());
+
             searchResultPage.scrollTo(null);
             searchResultPage. clickBuyButtonFirst();
-            searchResultPage. scrollToBottom(null);
+          //  searchResultPage. scrollToBottom(null);
             searchResultPage.clickOpenCartButton();
-            searchResultPage.waitForPageLoadComplete(DEFAULT_WAITING_TIME);
 
             curtPage = new CurtPage();
             curtPage.waitForPageLoadComplete(DEFAULT_WAITING_TIME);
