@@ -702,3 +702,13 @@
 [INFO ] 2021-12-22 14:45:08.651 [TestNG-PoolService-0] BasePage -  Enter search phone
 [INFO ] 2021-12-22 14:45:24.268 [TestNG-PoolService-1] BasePage -  Enter search лижі
 [INFO ] 2021-12-22 14:45:35.758 [TestNG-PoolService-1] BasePage -  Enter search sup
+[INFO ] 2021-12-22 14:51:11.692 [TestNG-PoolService-1] BasePage -  Enter search bag
+[INFO ] 2021-12-22 14:51:12.039 [TestNG-PoolService-2] BasePage -  Enter search lamp
+[INFO ] 2021-12-22 14:51:13.565 [TestNG-PoolService-0] BasePage -  Enter search phone
+[INFO ] 2021-12-22 14:51:30.012 [TestNG-PoolService-0] BasePage -  Enter search лижі
+[INFO ] 2021-12-22 14:51:40.841 [TestNG-PoolService-0] BasePage -  Enter search sup
+[INFO ] 2021-12-22 14:53:10.557 [TestNG-PoolService-0] BasePage -  Enter search phone
+[INFO ] 2021-12-22 14:53:12.321 [TestNG-PoolService-1] BasePage -  Enter search bag
+[INFO ] 2021-12-22 14:53:13.956 [TestNG-PoolService-2] BasePage -  Enter search lamp
+[INFO ] 2021-12-22 14:53:28.470 [TestNG-PoolService-1] BasePage -  Enter search лижі
+[INFO ] 2021-12-22 14:53:31.018 [TestNG-PoolService-2] BasePage -  Enter search sup

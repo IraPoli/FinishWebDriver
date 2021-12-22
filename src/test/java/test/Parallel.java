@@ -56,7 +56,7 @@ public class Parallel {
 
             curtPage = new CurtPage();
             curtPage.waitForPageLoadComplete(DEFAULT_WAITING_TIME);
-            curtPage.waitVisibilityOfElement(DEFAULT_WAITING_TIME,curtPage.getSumWebElement());
+            //curtPage.waitVisibilityOfElement(DEFAULT_WAITING_TIME,curtPage.getSumWebElement());
             int sumPrice = curtPage.getSumPrice();
             curtPage.takeSnapShot("./screenshots/testParallel_" + testId + ".png");
             Assert.assertTrue(sumPrice > filterRozetka.getSumLimit());

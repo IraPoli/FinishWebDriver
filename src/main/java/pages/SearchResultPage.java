@@ -13,33 +13,17 @@ import java.util.List;
 
 public class SearchResultPage extends BasePage {
 
-
-   // @FindBy(xpath = "//div[@data-filter-name='price']")
    @FindBy(xpath = "//div[@data-filter-name='producer']")
     private WebElement priceFilter;
 
-
-
-    //@FindBy(xpath = "/html/body/app-root/div/div/rz-search/rz-catalog/div/div[2]/aside/rz-filter-stack/div[3]/div")
     @FindBy(xpath = "/html/body/app-root/div/div/rz-search/rz-catalog/div/div[2]/aside/rz-filter-stack/div[2]/div/rz-scrollbar/div/div[1]/div/div/rz-filter-checkbox/ul[1]/li[2]")
     private WebElement brandSideBar;
-
-
-
-
 
     @FindBy(xpath = " /html/body/app-root/div/div/rz-search/rz-catalog/div/div[2]/aside/rz-filter-stack/div[3]/button/span")
     private WebElement brandLabelHeader;
 
-
-
     @FindBy(xpath = "//a[@class='goods-tile__heading ng-star-inserted' ]")
     private List<WebElement> productList;
-
-
-
-
-
 
     @FindBy(xpath = " //ul[contains(@ class, 'catalog-grid')]//button[contains(@class,'buy-button')]")
     private List<WebElement> buyButtonList;
@@ -155,18 +139,6 @@ public class SearchResultPage extends BasePage {
 
     public void clickBuyButtonFirst() throws InterruptedException {
 
-/*
-        logger.info(" Select first product to Curt");
-        Wait waitfluent = new FluentWait(driver)
-                .withTimeout(30, TimeUnit.SECONDS)
-                .pollingEvery(2, TimeUnit.SECONDS)
-                .ignoring(NoSuchElementException.class);
-
-        waitfluent.until(ExpectedConditions.visibilityOf(buyButtonFirst));
-      //  buyButtonFirst.click();
-
-        je.executeScript("arguments[0].click()", buyButtonFirst);
-*/
 
         /////POM!
      //   AddToCurtButton addToBasketFirst = new AddToCurtButton(driver.findElement(addToBasketFirstItem));
@@ -181,10 +153,6 @@ public class SearchResultPage extends BasePage {
 
 
 
-
-
-
-
     public void addItem(){
       //  String test = buyButtonFirst.getAttribute("aria-label");
         driver.navigate().refresh();
@@ -193,7 +161,6 @@ public class SearchResultPage extends BasePage {
         logger.info("add to Curt");
 
     }
-
 
     public void scrollToElem(WebElement element){
         element = priceFilter;

@@ -26,11 +26,6 @@ public class HomePage extends BasePage {
     By inputField = By.xpath("//input[contains(@class,'search-form')]");
 ////
     public HomePage() {
-
-    //    driver = WebDriverSingleton.getInstance();
-        //PageFactory.initElements(driver, this);
-     //   PageFactory.initElements(new CustomFieldDecorator(driver), this);
-
         PropertiesReader propertiesReader = new PropertiesReader();
         driver.get(propertiesReader.getUrl());
     }
