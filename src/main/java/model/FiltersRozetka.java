@@ -10,7 +10,7 @@ public class FiltersRozetka {
     @XmlElement(name = "filter")
     private List<FilterRozetka> filterRozetkasList;
 
-    public List<FilterRozetka> getFilters(){
+    public List<FilterRozetka> getFilters() {
         return filterRozetkasList;
     }
 

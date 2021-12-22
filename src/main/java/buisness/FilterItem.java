@@ -21,7 +21,7 @@ public class FilterItem {
         // searchResultPage.waitVisibilityOfElement(DEFAULT_WAITING_TIME,searchResultPage.getBrandLabelHeader());
         //  searchResultPage.selectBrand(filterRozetka.getBrand());
         searchResultPage.scrollTo(searchResultPage.getsTopOfPage());
-        searchResultPage. clickBuyButtonFirst();
+        searchResultPage.clickBuyButtonFirst();
         searchResultPage.clickOpenCartButton();
 
     }

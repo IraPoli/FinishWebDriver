@@ -1,9 +1,7 @@
 package pages;
 
 import decorator.Text;
-import decorator.TextInput;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -16,7 +14,7 @@ public class CurtPage extends BasePage {
     private Text textPrice;
 
     ///POM!
-    By priceSum = By.xpath( "//div[@class= 'cart-receipt__sum-price']/span");
+    By priceSum = By.xpath("//div[@class= 'cart-receipt__sum-price']/span");
     ////
 
 
@@ -25,25 +23,22 @@ public class CurtPage extends BasePage {
     }
 
     public int getSumPrice() {
-
-       /*
-        logger.info(" get sum price" +  price);
-        */
-
         int price;
+
         /////POM!
 
-      /// Text texLabel = new Text(driver.findElement(priceSum));
-      //  price =texLabel.getInt();
+        /// Text texLabel = new Text(driver.findElement(priceSum));
+        //  price =texLabel.getInt();
         ////
 
 
         price = textPrice.getInt();
+        logger.info( " get sum prise ");
         return price;
     }
 
     public WebElement getSumWebElement() {
-    return sumPrice;
+        return sumPrice;
 
     }
 

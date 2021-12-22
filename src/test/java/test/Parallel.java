@@ -6,21 +6,12 @@ import model.FilterRozetka;
 import model.FiltersRozetka;
 import org.testng.Assert;
 import org.testng.annotations.*;
-import pages.CurtPage;
 import utils.WebDriverSingleton;
 import utils.XMLToObject;
 
 import java.util.List;
 
-import static java.lang.Thread.sleep;
-
-
 public class Parallel {
-    //  HomePage homePage;
-    //  SearchResultPage searchResultPage;
-    // CurtPage curtPage;
-
-    private static final long DEFAULT_WAITING_TIME = 90;
 
     @DataProvider(name = "data", parallel = true)
     public static Object[] getData() {
@@ -37,7 +28,7 @@ public class Parallel {
 
         filterItem.applyFilters(filterRozetka);
 
-        Assert.assertTrue(new CartData().getSumOrder() > filterRozetka.getSumLimit());
+        Assert.assertTrue(new CartData().getSumOrder(filterRozetka.getId()) > filterRozetka.getSumLimit());
 
     }
 

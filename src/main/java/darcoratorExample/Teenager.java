@@ -5,7 +5,7 @@ public class Teenager extends ChildDecorator {
         super(baby);
     }
 
-    public String read(){
+    public String read() {
         return ". I can read";
     }
 

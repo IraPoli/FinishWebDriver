@@ -1,9 +1,6 @@
 package decorator;
-
 import org.openqa.selenium.*;
-
 import java.util.List;
-
 
 
 public class Element implements WebElement {
@@ -19,14 +16,14 @@ public class Element implements WebElement {
     }
 
     @Override
-    public void submit() {webElement.submit();
+    public void submit() {
+        webElement.submit();
 
     }
 
     @Override
     public void sendKeys(CharSequence... charSequences) {
-       // webElement.sendKeys(charSequences);
-          webElement.sendKeys(charSequences);
+        webElement.sendKeys(charSequences);
     }
 
     @Override
@@ -36,7 +33,7 @@ public class Element implements WebElement {
 
     @Override
     public String getTagName() {
-        return  webElement.getTagName();
+        return webElement.getTagName();
     }
 
     @Override
@@ -66,7 +63,7 @@ public class Element implements WebElement {
 
     @Override
     public WebElement findElement(By by) {
-        return  webElement.findElement(by) ;
+        return webElement.findElement(by);
     }
 
     @Override

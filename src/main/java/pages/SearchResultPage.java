@@ -13,7 +13,7 @@ import java.util.List;
 
 public class SearchResultPage extends BasePage {
 
-   @FindBy(xpath = "//div[@data-filter-name='producer']")
+    @FindBy(xpath = "//div[@data-filter-name='producer']")
     private WebElement priceFilter;
 
     @FindBy(xpath = "/html/body/app-root/div/div/rz-search/rz-catalog/div/div[2]/aside/rz-filter-stack/div[2]/div/rz-scrollbar/div/div[1]/div/div/rz-filter-checkbox/ul[1]/li[2]")
@@ -50,10 +50,9 @@ public class SearchResultPage extends BasePage {
     private WebElement topOfPage;
 
 
-   // @FindBy(xpath = " /html/body/app-root/div/div/rz-search/rz-catalog/div/div[2]/section/rz-catalog-paginator/rz-load-more/a/span")
+    // @FindBy(xpath = " /html/body/app-root/div/div/rz-search/rz-catalog/div/div[2]/section/rz-catalog-paginator/rz-load-more/a/span")
     @FindBy(xpath = "/html/body/app-root/div/rz-lazy")
     private WebElement bottomOfPage;
-
 
 
     @FindBy(xpath = "/html/body/app-root/div/div/rz-search/rz-catalog/div/div[2]/aside/rz-filter-stack/div[4]")
@@ -62,15 +61,14 @@ public class SearchResultPage extends BasePage {
     JavascriptExecutor je = (JavascriptExecutor) driver;
 
     @FindBy(xpath = "//ul[contains(@ class, 'catalog-grid')]//button[contains(@class,'buy-button')][1]")
-    private AddToCurtButton  addToBasketFirstButton;
+    private AddToCurtButton addToBasketFirstButton;
 
     @FindBy(xpath = "//button[@opencart]")
     private Button openCurtSafeButton;
     ///POM!
-    By openCurtSafe = By.xpath( "//button[@opencart]");
+    By openCurtSafe = By.xpath("//button[@opencart]");
     By addToBasketFirstItem = By.xpath("//ul[contains(@ class, 'catalog-grid')]//button[contains(@class,'buy-button')][1]");
 ////
-
 
 
     public SearchResultPage() {
@@ -93,15 +91,14 @@ public class SearchResultPage extends BasePage {
 
     public void clickOpenCartButton() {
         ///POM!!
-        Button openCurtSafePOMButton =  new Button(driver.findElement(openCurtSafe));
+        Button openCurtSafePOMButton = new Button(driver.findElement(openCurtSafe));
         openCurtSafePOMButton.castClick();
 
         ////
-       // openCurtSafeButton.castClick();
-     //   je.executeScript("arguments[0].click()", openCurtButton);
-        //  logger.info(" Open Curt page");
+        // openCurtSafeButton.castClick();
+        //   je.executeScript("arguments[0].click()", openCurtButton);
+          logger.info(" Open Curt page");
     }
-
 
 
     public void selectBrand(String brandName) throws InterruptedException {
@@ -119,10 +116,10 @@ public class SearchResultPage extends BasePage {
         webElementBrand.click();
 
     }
+
     public WebElement getBrandLabelHeader() {
         return brandLabelHeader;
     }
-
 
 
     public WebElement getAvailableLabelElement() {
@@ -141,10 +138,11 @@ public class SearchResultPage extends BasePage {
 
 
         /////POM!
-     //   AddToCurtButton addToBasketFirst = new AddToCurtButton(driver.findElement(addToBasketFirstItem));
-      //  addToBasketFirst.castClick();
+        //   AddToCurtButton addToBasketFirst = new AddToCurtButton(driver.findElement(addToBasketFirstItem));
+        //  addToBasketFirst.castClick();
 
-         addToBasketFirstButton.castClick();
+        addToBasketFirstButton.castClick();
+        logger.info( " add first item ");
     }
 
     public WebElement getBrandSideBar() {
@@ -152,40 +150,39 @@ public class SearchResultPage extends BasePage {
     }
 
 
+    public void addItem() {
 
-    public void addItem(){
-      //  String test = buyButtonFirst.getAttribute("aria-label");
-        driver.navigate().refresh();
-
-    //    addToCurtButton.addIfNotAdd();
+        //    addToCurtButton.addIfNotAdd();
         logger.info("add to Curt");
 
     }
 
-    public void scrollToElem(WebElement element){
+    public void scrollToElem(WebElement element) {
         element = priceFilter;
-        je.executeScript("arguments[0].scrollIntoView(true);",element);
+        je.executeScript("arguments[0].scrollIntoView(true);", element);
     }
 
-    public void scrollToBottom(WebElement element){
+    public void scrollToBottom(WebElement element) {
 
         element = bottomOfPage;
-        je.executeScript("arguments[0].scrollIntoView(true);",element);
+        je.executeScript("arguments[0].scrollIntoView(true);", element);
     }
 
 
     public void scrollTo(WebElement element) throws InterruptedException {
 
-        je.executeScript("arguments[0].scrollIntoView(true);",element);
+        je.executeScript("arguments[0].scrollIntoView(true);", element);
+        logger.info( " scroll to element ");
     }
+
     public WebElement getsTopOfPage() {
         return topOfPage;
     }
 
 
-    public void scrollToCartButton(WebElement element){
+    public void scrollToCartButton(WebElement element) {
         element = openCurtButton;
-        je.executeScript("arguments[0].scrollIntoView(true);",element);
+        je.executeScript("arguments[0].scrollIntoView(true);", element);
     }
 
 }

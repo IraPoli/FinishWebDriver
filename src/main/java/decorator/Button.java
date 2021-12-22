@@ -15,20 +15,15 @@ public class Button extends Element {
     }
 
     public void castClick() {
-        WebDriver driver;
+ /*       WebDriver driver;
         driver = WebDriverSingleton.getInstance();
-
         JavascriptExecutor je = (JavascriptExecutor) driver;
-
-
+*/
         try {
             super.click();
-        }catch (ElementClickInterceptedException e){
+        } catch (ElementClickInterceptedException e) {
             new WebDriverWait(WebDriverSingleton.getInstance(), 30).until(ExpectedConditions.elementToBeClickable(webElement));
         }
-
-      //  je.executeScript("arguments[0].click()", webElement);
+        //  je.executeScript("arguments[0].click()", webElement);
     }
-
-
 }

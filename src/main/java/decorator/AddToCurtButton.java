@@ -1,6 +1,4 @@
 package decorator;
-
-
 import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -16,26 +14,23 @@ public class AddToCurtButton extends Element {
     }
 
     public void castClick() {
-        WebDriver driver;
+     /*   WebDriver driver;
         driver = WebDriverSingleton.getInstance();
-        JavascriptExecutor je = (JavascriptExecutor) driver;
+        JavascriptExecutor je = (JavascriptExecutor) driver;*/
         if (!isAdded()) {
 
             try {
                 super.click();
-            }catch (ElementClickInterceptedException e){
+            } catch (ElementClickInterceptedException e) {
                 new WebDriverWait(WebDriverSingleton.getInstance(), 30).until(ExpectedConditions.elementToBeClickable(webElement));
             }
             // je.executeScript("arguments[0].click()", super.webElement);
-           // super.click();
         }
     }
 
     public boolean isAdded() {
 
-       String str =  super.getAttribute("aria-label");
+        String str = super.getAttribute("aria-label");
         return str.equals("В корзине");
     }
-
-
 }

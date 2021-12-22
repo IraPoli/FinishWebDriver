@@ -21,9 +21,7 @@ public class WebDriverSingleton {
             String driverLocation = propertiesReader.getDriverLocation();
             System.setProperty(driverName, driverLocation);
             instance = new ChromeDriver();
-          //  instance = new FirefoxDriver();
-
-
+            //  instance = new FirefoxDriver();
             instance.manage().window().maximize();
             instance.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
             webDriverThreadLocal.set(instance);
@@ -34,7 +32,7 @@ public class WebDriverSingleton {
     public static void close() {
 
         try {
-            if(webDriverThreadLocal != null) {
+            if (webDriverThreadLocal != null) {
                 webDriverThreadLocal.get().quit();
             }
         } catch (Exception e) {
