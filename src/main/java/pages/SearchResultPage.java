@@ -176,9 +176,12 @@ public class SearchResultPage extends BasePage {
 
     public void scrollTo(WebElement element) throws InterruptedException {
 
-        element = topOfPage;
         je.executeScript("arguments[0].scrollIntoView(true);",element);
     }
+    public WebElement getsTopOfPage() {
+        return topOfPage;
+    }
+
 
     public void scrollToCartButton(WebElement element){
         element = openCurtButton;
