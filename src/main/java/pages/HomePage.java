@@ -11,12 +11,15 @@ import utils.PropertiesReader;
 
 public class HomePage extends BasePage {
 
-    @FindBy(tagName = "//input[contains(@class,'search-form')]")
+
+
+    //@FindBy(tagName = "//input[contains(@class,'search-form')]")
+    @FindBy(css = "input[name = 'search']")       //CSS
     private TextInput textSearchField;
 
 
-    @FindBy(xpath = "//input[contains(@class,'search-form')]")
-    private WebElement searchField;
+   // @FindBy(xpath = "//input[contains(@class,'search-form')]")
+   // private WebElement searchField;
 
     @FindBy(xpath = "//button[contains(@class,' search-form__submit')]")
     private WebElement searchButton;

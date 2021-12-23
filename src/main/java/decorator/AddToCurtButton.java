@@ -7,13 +7,15 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.WebDriverSingleton;
 
+import static java.lang.Thread.sleep;
+
 public class AddToCurtButton extends Element {
 
     public AddToCurtButton(WebElement webElement) {
         super(webElement);
     }
 
-    public void castClick() {
+    public void castClick() throws InterruptedException {
      /*   WebDriver driver;
         driver = WebDriverSingleton.getInstance();
         JavascriptExecutor je = (JavascriptExecutor) driver;*/
@@ -26,6 +28,9 @@ public class AddToCurtButton extends Element {
             }
             // je.executeScript("arguments[0].click()", super.webElement);
         }
+       if(!isAdded()){
+           sleep(30);
+       }
     }
 
     public boolean isAdded() {

@@ -22,6 +22,8 @@ public class SearchResultPage extends BasePage {
     @FindBy(xpath = " /html/body/app-root/div/div/rz-search/rz-catalog/div/div[2]/aside/rz-filter-stack/div[3]/button/span")
     private WebElement brandLabelHeader;
 
+
+
     @FindBy(xpath = "//a[@class='goods-tile__heading ng-star-inserted' ]")
     private List<WebElement> productList;
 
@@ -34,10 +36,10 @@ public class SearchResultPage extends BasePage {
     @FindBy(xpath = "//div[@data-filter-name='producer']//label")
     private List<WebElement> producerList;
 
-
+/*
     @FindBy(xpath = "//label[@for='Есть в наличии']")
     private WebElement availableLabel;
-
+*/
     @FindBy(xpath = "//a[@class='goods-tile__heading ng-star-inserted' ]")
     private List<WebElement> itemList;
 
@@ -45,18 +47,16 @@ public class SearchResultPage extends BasePage {
     @FindBy(xpath = "//button[@opencart]")
     private WebElement openCurtButton;
 
-
-    @FindBy(xpath = " /html/body/app-root/div/div/rz-search/rz-catalog/div/div[1]/div")
+    @FindBy(css = " [class='catalog-settings ng-star-inserted']") //CSS
     private WebElement topOfPage;
+/*
 
-
-    // @FindBy(xpath = " /html/body/app-root/div/div/rz-search/rz-catalog/div/div[2]/section/rz-catalog-paginator/rz-load-more/a/span")
     @FindBy(xpath = "/html/body/app-root/div/rz-lazy")
     private WebElement bottomOfPage;
+*/
 
-
-    @FindBy(xpath = "/html/body/app-root/div/div/rz-search/rz-catalog/div/div[2]/aside/rz-filter-stack/div[4]")
-    private WebElement priceElement;
+  //  @FindBy(xpath = "/html/body/app-root/div/div/rz-search/rz-catalog/div/div[2]/aside/rz-filter-stack/div[4]")
+  //  private WebElement priceElement;
 
     JavascriptExecutor je = (JavascriptExecutor) driver;
 
@@ -121,7 +121,7 @@ public class SearchResultPage extends BasePage {
         return brandLabelHeader;
     }
 
-
+/*
     public WebElement getAvailableLabelElement() {
         return availableLabel;
     }
@@ -129,7 +129,7 @@ public class SearchResultPage extends BasePage {
     public void selectAvailableLabel() {
         availableLabel.click();
     }
-
+*/
     public void selectFirstItem() {
         itemList.get(0).click();
     }
@@ -157,18 +157,20 @@ public class SearchResultPage extends BasePage {
 
     }
 
+    /*
     public void scrollToElem(WebElement element) {
         element = priceFilter;
         je.executeScript("arguments[0].scrollIntoView(true);", element);
     }
-
+    */
+/*
     public void scrollToBottom(WebElement element) {
 
         element = bottomOfPage;
         je.executeScript("arguments[0].scrollIntoView(true);", element);
     }
 
-
+*/
     public void scrollTo(WebElement element) throws InterruptedException {
 
         je.executeScript("arguments[0].scrollIntoView(true);", element);
@@ -179,10 +181,15 @@ public class SearchResultPage extends BasePage {
         return topOfPage;
     }
 
+    public WebElement getPriceFilterEl() {
+        return priceFilter;
+    }
 
+/*
     public void scrollToCartButton(WebElement element) {
         element = openCurtButton;
         je.executeScript("arguments[0].scrollIntoView(true);", element);
     }
+    */
 
 }

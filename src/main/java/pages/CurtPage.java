@@ -7,7 +7,8 @@ import org.openqa.selenium.support.FindBy;
 
 public class CurtPage extends BasePage {
 
-    @FindBy(xpath = "//div[@class= 'cart-receipt__sum-price']/span")
+ //   @FindBy(xpath = "//div[@class= 'cart-receipt__sum-price']/span")
+    @FindBy(css = "  div[class= 'cart-receipt__sum-price']") //CSS
     private WebElement sumPrice;
 
     @FindBy(xpath = "//div[@class= 'cart-receipt__sum-price']/span")
@@ -26,11 +27,9 @@ public class CurtPage extends BasePage {
         int price;
 
         /////POM!
-
         /// Text texLabel = new Text(driver.findElement(priceSum));
         //  price =texLabel.getInt();
         ////
-
 
         price = textPrice.getInt();
         logger.info( " get sum prise ");

@@ -30,6 +30,9 @@ public class BasePage {
         WebDriverWait wait = new WebDriverWait(driver, timeToWait);
         wait.until(ExpectedConditions.elementToBeClickable(element));
     }
+    public void waitVisibilityOfElementTest(long timeToWait, WebElement element) {
+        new WebDriverWait(WebDriverSingleton.getInstance(), 30).until(ExpectedConditions.elementToBeClickable(element));
+    }
 
 
     public void takeSnapShot(String fileWithPath) throws Exception {

@@ -17,9 +17,10 @@ public class FilterItem {
         searchResultPage = new SearchResultPage();
         searchResultPage.waitForPageLoadComplete(DEFAULT_WAITING_TIME);
 
-        //  searchResultPage.scrollToElem(null);
-        // searchResultPage.waitVisibilityOfElement(DEFAULT_WAITING_TIME,searchResultPage.getBrandLabelHeader());
-        //  searchResultPage.selectBrand(filterRozetka.getBrand());
+
+        searchResultPage.scrollTo(searchResultPage.getPriceFilterEl());
+        searchResultPage.waitVisibilityOfElementTest(DEFAULT_WAITING_TIME,searchResultPage.getBrandLabelHeader());
+        searchResultPage.selectBrand(filterRozetka.getBrand());
         searchResultPage.scrollTo(searchResultPage.getsTopOfPage());
         searchResultPage.clickBuyButtonFirst();
         searchResultPage.clickOpenCartButton();
