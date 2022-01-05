@@ -11,19 +11,21 @@ public class FilterItem {
 
     public void applyFilters(FilterRozetka filterRozetka) throws InterruptedException {
         homePage = new HomePage();
+
         homePage.enterTextToSearchField(filterRozetka.getItemName());
         homePage.waitForPageLoadComplete(DEFAULT_WAITING_TIME);
 
         searchResultPage = new SearchResultPage();
         searchResultPage.waitForPageLoadComplete(DEFAULT_WAITING_TIME);
 
-
         searchResultPage.scrollTo(searchResultPage.getPriceFilterEl());
-        searchResultPage.waitVisibilityOfElementTest(DEFAULT_WAITING_TIME,searchResultPage.getBrandLabelHeader());
-        searchResultPage.selectBrand(filterRozetka.getBrand());
-        searchResultPage.scrollTo(searchResultPage.getsTopOfPage());
-        searchResultPage.clickBuyButtonFirst();
-        searchResultPage.clickOpenCartButton();
+        searchResultPage.waitVisibilityOfElement(DEFAULT_WAITING_TIME,searchResultPage.getBrandLabelHeader());
+
+        searchResultPage.selectBrandCustom(filterRozetka.getBrand());
+
+        searchResultPage.scrollTo(searchResultPage.getsTopOfPage())
+                        .clickBuyButtonFirst()
+                        .clickOpenCartButton();
 
     }
 }

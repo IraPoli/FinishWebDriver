@@ -1,6 +1,7 @@
 package pages;
 
 
+import decorator.Button;
 import decorator.TextInput;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -8,10 +9,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import utils.PropertiesReader;
 
+import java.util.List;
+
 
 public class HomePage extends BasePage {
 
 
+
+   @FindBy(xpath = " //a[@class='menu-categories__link']")
+    private List<Button> listMenuButton;
 
     //@FindBy(tagName = "//input[contains(@class,'search-form')]")
     @FindBy(css = "input[name = 'search']")       //CSS
@@ -45,6 +51,9 @@ public class HomePage extends BasePage {
 
     public void clickSearchButton() {
         searchButton.click();
+    }
+    public void selectMenuButton(int number) {
+        listMenuButton.get(number).click();
     }
 
 }

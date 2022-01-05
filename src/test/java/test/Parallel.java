@@ -25,11 +25,9 @@ public class Parallel {
     @Test(dataProvider = "data")
     public void parallel(FilterRozetka filterRozetka) throws Exception {
         FilterItem filterItem = new FilterItem();
-
         filterItem.applyFilters(filterRozetka);
 
         Assert.assertTrue(new CartData().getSumOrder(filterRozetka.getId()) > filterRozetka.getSumLimit());
-
     }
 
 

@@ -11,7 +11,7 @@ public class CartData {
 
         curtPage = new CurtPage();
         curtPage.waitForPageLoadComplete(DEFAULT_WAITING_TIME);
-        curtPage.waitVisibilityOfElementTest(DEFAULT_WAITING_TIME,curtPage.getSumWebElement());
+        curtPage.waitVisibilityOfElement(DEFAULT_WAITING_TIME,curtPage.getSumWebElement());
         int sumPrice = curtPage.getSumPrice();
         curtPage.takeSnapShot("./screenshots/testParallel_" + id + ".png");
         return sumPrice;

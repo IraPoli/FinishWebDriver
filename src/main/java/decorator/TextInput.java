@@ -11,6 +11,13 @@ public class TextInput extends Element {
         super.webElement.clear();
         super.webElement.sendKeys(charSequences);
     }
+
+    @Override
+    public String getValue() {
+        return webElement.getAttribute("value");
+    }
+
+
 }
 
 
