@@ -19,7 +19,7 @@
         <id>03</id>
         <itemName>lamp</itemName>
         <brand>SUN</brand>
-        <sumLimit>100</sumLimit>
+        <sumLimit>1000</sumLimit>
     </filter>
 
     <filter>

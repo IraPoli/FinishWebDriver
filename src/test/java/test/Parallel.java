@@ -6,11 +6,13 @@ import model.FilterRozetka;
 import model.FiltersRozetka;
 import org.testng.Assert;
 import org.testng.annotations.*;
+import org.testng.asserts.SoftAssert;
 import utils.WebDriverSingleton;
 import utils.XMLToObject;
 
 import java.util.List;
 
+@Listeners(listeners.MyListener.class)
 public class Parallel {
 
     @DataProvider(name = "data", parallel = true)
@@ -27,7 +29,10 @@ public class Parallel {
         FilterItem filterItem = new FilterItem();
         filterItem.applyFilters(filterRozetka);
 
-        Assert.assertTrue(new CartData().getSumOrder(filterRozetka.getId()) > filterRozetka.getSumLimit());
+        SoftAssert assertion = new SoftAssert();
+        assertion.assertTrue(new CartData().getSumOrder(filterRozetka.getId()) > filterRozetka.getSumLimit());
+        assertion.assertAll();
+        //  Assert.assertTrue(new CartData().getSumOrder(filterRozetka.getId()) > filterRozetka.getSumLimit());
     }
 
 
@@ -36,4 +41,3 @@ public class Parallel {
         WebDriverSingleton.close();
     }
 }
-
