@@ -12,7 +12,7 @@ public class AddToCurtButton extends Element  {
     public void castClick() {
         new WebDriverWait(WebDriverSingleton.getInstance(), 30).until(ExpectedConditions.elementToBeClickable(webElement));
         super.click();
-        new WebDriverWait(WebDriverSingleton.getInstance(), 30).until(ExpectedConditions.attributeToBe(webElement,"aria-label","В корзине"));
+        new WebDriverWait(WebDriverSingleton.getInstance(), 30).until(ExpectedConditions.attributeToBe(webElement,"aria-label","В кошику"));
     }
 
     @Override
