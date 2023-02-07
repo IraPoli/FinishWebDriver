@@ -19,9 +19,9 @@ public class PropertiesReader {
             fileInputStream.close();
         } catch (FileNotFoundException e) {
             // logger.info("Property file is not exist");
-            // e.printStackTrace();
+             e.printStackTrace();
         } catch (IOException e) {
-            // e.printStackTrace();
+             e.printStackTrace();
         }
     }
 

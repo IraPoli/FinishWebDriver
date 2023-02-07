@@ -27,7 +27,10 @@ public class SearchResultPage extends BasePage {
     private List<WebElement> producerList;
 
 
-    @FindBy(css = " [class='catalog-settings ng-star-inserted']") //CSS
+    //*[@class="catalog-grid ng-star-inserted"]
+
+   // @FindBy(css = " [class='catalog-settings ng-star-inserted']") //CSS
+   @FindBy(xpath = "//*[@class='catalog-grid ng-star-inserted']")
     private WebElement topOfPage;
 
 
@@ -38,12 +41,12 @@ public class SearchResultPage extends BasePage {
     JavascriptExecutor je = (JavascriptExecutor) driver;
 
     //****
-    @FindBy(xpath= "//button[@ aria-label=\"Купить\"]")
+    @FindBy(xpath= "//button[@ aria-label=\"Купити\"]")
     private List<AddToCurtButton> allButtons;
 
     //****
 
-    @FindBy(xpath= "//button[@ aria-label=\"Купить\"]")
+    @FindBy(xpath= "//button[@ aria-label=\"Купити\"]")
     private Button buyButton;
 
 
@@ -52,7 +55,10 @@ public class SearchResultPage extends BasePage {
 
 
     ///POM!
-    By openCurtSafe = By.xpath("//button[@opencart]");
+
+
+   // By openCurtSafe = By.xpath("//button[@opencart]");
+    By openCurtSafe = By.xpath("//button[contains(@class,'buy-button_state_in-cart')]");
     By addToBasketFirstItem = By.xpath("//ul[contains(@ class, 'catalog-grid')]//button[contains(@class,'buy-button')][1]");
     ////
 

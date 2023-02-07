@@ -15,7 +15,7 @@ import java.util.List;
 @Listeners(listeners.MyListener.class)
 public class Parallel {
 
-    @DataProvider(name = "data", parallel = true)
+    @DataProvider(name = "data")//, parallel = true)
     public static Object[] getData() {
         XMLToObject xmlToObject = new XMLToObject();
         FiltersRozetka filtersRozetka = xmlToObject.convert();
