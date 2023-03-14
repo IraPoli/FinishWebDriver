@@ -41,14 +41,16 @@ public class SearchResultPage extends BasePage {
     JavascriptExecutor je = (JavascriptExecutor) driver;
 
     //****
-    @FindBy(xpath= "//button[@ aria-label=\"Купити\"]")
+  //  @FindBy(xpath= "//button[@ aria-label='Купить']")
+    @FindBy(xpath= "//button[contains(@class,'buy')]")
     private List<AddToCurtButton> allButtons;
 
     //****
 
-    @FindBy(xpath= "//button[@ aria-label=\"Купити\"]")
-    private Button buyButton;
 
+  //  @FindBy(xpath= "//button[@ aria-label='Купить']")
+    @FindBy(xpath= "//button[contains(@class,'buy')]")
+    private Button buyButton;
 
     @FindBy(xpath = "//button[@opencart]")
     private Button openCurtSafeButton;

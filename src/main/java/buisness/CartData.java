@@ -3,7 +3,7 @@ package buisness;
 import pages.CurtPage;
 
 public class CartData {
-    private static final long DEFAULT_WAITING_TIME = 90;
+    private static final long DEFAULT_WAITING_TIME = 180;
 
     CurtPage curtPage;
 

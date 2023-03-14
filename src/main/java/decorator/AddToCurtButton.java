@@ -12,9 +12,8 @@ public class AddToCurtButton extends Element  {
     public void castClick() {
         new WebDriverWait(WebDriverSingleton.getInstance(), 30).until(ExpectedConditions.elementToBeClickable(webElement));
         super.click();
-        new WebDriverWait(WebDriverSingleton.getInstance(), 30).until(ExpectedConditions.attributeToBe(webElement,"aria-label","В кошику"));
+        new WebDriverWait(WebDriverSingleton.getInstance(), 30).until(ExpectedConditions.attributeToBe(webElement,"class","buy-button goods-tile__buy-button ng-star-inserted buy-button_state_in-cart"));
     }
-
     @Override
     public String getValue() {
         return webElement.getAttribute("value");
