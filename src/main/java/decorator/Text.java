@@ -15,7 +15,7 @@ public class Text extends Element {
     public int getInt() {
         int number;
         new WebDriverWait(WebDriverSingleton.getInstance(), 30).until(ExpectedConditions.visibilityOf(webElement));
-        number = Integer.parseInt(super.getText().replaceAll("₴", "").replaceAll(" ", "").replaceAll("/?", ""));
+        number = Integer.parseInt(super.getText().replaceAll("[^0-9]", ""));
         return number;
 
     }
